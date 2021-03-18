@@ -1,20 +1,22 @@
-<div class="footer text-center">
-    <div class="grid-x">
-        <?php foreach ($this->getFooterLinks('flat') as $key) { ?>
-            <div class="cell">
-            <small><?php $this->html($key) ?></small>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <div class="columns">
+            <?php foreach ($this->getFooterLinks('flat') as $key) { ?>
+                <div class="column is-full">
+                    <small><?php $this->html($key) ?></small>
+                </div>
+            <?php } ?>
         </div>
-
-        <?php } ?>
-        <?php foreach ($this->getFooterIcons('icononly') as $blockName => $footerIcons) { ?>
-            <div class="cell">
-                <?php
-                foreach ($footerIcons as $icon) {
-                    echo $this->getSkin()->makeFooterIcon($icon);
-                }
-                ?>
-            </div>
-        <?php } ?>
+        <div class="columns">
+            <?php foreach ($this->getFooterIcons('icononly') as $blockName => $footerIcons) { ?>
+                <div class="column">
+                    <?php
+                    foreach ($footerIcons as $icon) {
+                        echo $this->getSkin()->makeFooterIcon($icon);
+                    }
+                    ?>
+                </div>
+            <?php } ?>
+        </div>
     </div>
-
-</div>
+</footer>
