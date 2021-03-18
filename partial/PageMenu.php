@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="is-flex is-justify-content-flex-end mt-2 mb-2">
+    <div class="is-flex is-justify-content-flex-end mt-2 page-menu">
         <?php
         foreach ($this->data['content_navigation'] as $group => $tabs) {
             $menuId = sprintf('dropdown-menu-%s', $group);

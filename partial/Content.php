@@ -1,41 +1,48 @@
-<div class="off-canvas-content" data-off-canvas-content>
-    <?php include("Notice.php") ?>
-    <div class="grid-container mw-body" id="content">
-        <div class="grid-x">
-            <div class="cell">
-                <ul class="dropdown menu page-actions" data-dropdown-menu>
-                    <?php
-                    $groupLink = '<li class="is-dropdown-submenu-parent"><a href="#">%s</a>';
-                    foreach ($this->data['content_navigation'] as $group => $tabs) {
-                        if (!empty($tabs)) {
-                            echo sprintf($groupLink, $group);
-                            echo '<ul class="menu">';
-                            foreach ($tabs as $key => $tab) {
-                                echo $this->makeListItem($key, $tab);
-                            }
-                            echo '</ul></li>';
-                        }
-                    }
-                    ?>
-                </ul>
+<div class="container mw-body" id="content">
+    <div class="columns mt-2 mw-title">
+        <div class="column is-full is-flex is-justify-content-center">
+            <h1 class="title"><?php $this->html('title'); ?></h1>
+        </div>
+
+    </div>
+    <div class="columns">
+        <div class="column is-full is-flex is-justify-content-center p-0">
+            <?php echo $this->getIndicators(); ?>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-full is-flex is-justify-content-center">
+            <div class="icon-text">
+                <span class="icon has-text-info">
+                    <i class="fa fa-info-circle"></i>
+                </span>
+                <span><small><?php echo $this->data['lastmod']; ?></small></span>
             </div>
         </div>
-        <div class="grid-x page-title">
-            <div class="cell auto">
-                <h1><?php $this->html('title'); ?></h1>
-            </div>
-            <div class="cell shrink"><?php echo $this->getIndicators(); ?></div>
+    </div>
+    <div class="columns" id="bodyContent">
+        <div class="column is-full" id="bodyContent">
+            <?php
+            ob_start();
+            $this->html('bodytext');
+            $out = ob_get_contents();
+            ob_end_clean();
+            $markers = array("<h1", "<h2", "<h3");
+            $tags = array('<h1 class="title is-4"', '<h2 class="title is-5"', '<h3 class="title is-6"');
+            $body = str_replace($markers, $tags, $out);
+            // $this->html('bodytext'); 
+            echo $body;
+            ?>
         </div>
-        <div class="grid-x grid-margin-x">
-            <div class="cell" id="bodyContent">
-                <?php $this->html('bodytext'); ?>
-            </div>
-            <div class="cell">
-                <?php $this->html('catlinks'); ?>
-            </div>
-            <div class="cell">
-                <?php $this->html('dataAfterContent'); ?>
-            </div>
+    </div>
+    <div class="columns">
+        <div class="column is-full">
+            <?php $this->html('catlinks'); ?>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-full">
+            <?php $this->html('dataAfterContent'); ?>
         </div>
     </div>
 </div>
