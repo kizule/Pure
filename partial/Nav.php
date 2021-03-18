@@ -70,6 +70,3 @@
         </div>
     </div>
 </nav>
-
-<div class="sub-navbar">
-</div>
