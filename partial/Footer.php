@@ -9,9 +9,9 @@
             </div>
         <?php } ?>
 
-        <div class="columns">
+        <div class="columns is-justify-content-center">
             <?php foreach ($this->getFooterIcons('icononly') as $blockName => $footerIcons) { ?>
-                <div class="column">
+                <div class="column is-1">
                     <?php
                     foreach ($footerIcons as $icon) {
                         echo $this->getSkin()->makeFooterIcon($icon);
