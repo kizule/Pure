@@ -49,6 +49,27 @@
                     </div>
             <?php }
             } ?>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link"><i class="fa fa-cogs"></i></a>
+                <div class="navbar-dropdown is-right">
+                    <?php foreach ($this->getToolbox() as $key => $item) {
+                        echo $this->makeLink($key, $item, array('link-class' => 'navbar-item'));
+                    } ?>
+                </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link"><i class="fa fa-user"></i></a>
+                <div class="navbar-dropdown is-right">
+                    <?php foreach ($this->getPersonalTools() as $key => $item) {
+                        foreach ($item['links'] as $linkKey => $link) {
+                            echo $this->makeLink($linkKey, $link, array('link-class' => 'navbar-item'));
+                        }
+                    } ?>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
+
+<div class="sub-navbar">
+</div>

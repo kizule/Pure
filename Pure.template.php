@@ -9,6 +9,7 @@ class PureTemplate extends BaseTemplate
 
 		<!-- START LESS TEMPLATE -->
 		<?php include_once("partial/Nav.php") ?>
+		<?php include_once("partial/PageMenu.php") ?>
 		<!-- END LESS TEMPLATE   -->
 
 		<?php $this->printTrail(); ?>
