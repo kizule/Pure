@@ -1,0 +1,40 @@
+.sub-navbar {
+    height          : 80px;
+    background-image: linear-gradient(90deg, rgb(250, 250, 250), rgb(250, 250, 250));
+}
+
+.navbar-link {
+    font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 600;
+    color      : #2c2c2c;
+    font-size  : 14px;
+}
+
+.navbar-link:not(.is-arrowless)::after,
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-width: 1px;
+    width       : 6px;
+    height      : 6px;
+    border-color: #2c2c2c;
+}
+
+.buttons {
+    align-items: flex-start;
+}
+
+.buttons .field {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-dropdown .is-active {
+      display: block;
+    }
+    .navbar-dropdown:not(.is-active) {
+      display: none;
+    }
+    .buttons {
+        justify-content: center;
+    }
+}
+  
