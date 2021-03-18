@@ -2,8 +2,8 @@
     <div class="content has-text-centered">
 
         <?php foreach ($this->getFooterLinks('flat') as $key) { ?>
-            <div class="columns">
-                <div class="column is-full">
+            <div class="columns p-0">
+                <div class="column is-full p-0">
                     <small><?php $this->html($key) ?></small>
                 </div>
             </div>
