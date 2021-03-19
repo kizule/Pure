@@ -1,23 +1,13 @@
 <div class="container mw-body" id="content">
     <div class="columns mt-2 mw-title">
-        <div class="column is-full is-flex is-justify-content-center">
+        <div class="column is-full">
             <h1 class="title"><?php $this->html('title'); ?></h1>
         </div>
 
     </div>
     <div class="columns">
-        <div class="column is-full is-flex is-justify-content-center p-0">
+        <div class="column is-full">
             <?php echo $this->getIndicators(); ?>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column is-full is-flex is-justify-content-center">
-            <div class="icon-text">
-                <span class="icon has-text-info">
-                    <i class="fa fa-info-circle"></i>
-                </span>
-                <span><small><?php echo $this->data['lastmod']; ?></small></span>
-            </div>
         </div>
     </div>
     <div class="columns" id="bodyContent">
