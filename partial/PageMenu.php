@@ -1,6 +1,6 @@
 <div class="container pt-3 pb-3">
     <div class="columns">
-        <div class="column is-4">
+        <div class="column">
             <div class="tabs">
                 <ul>
                     <?php
@@ -10,13 +10,15 @@
                         else
                             echo '<li>';
                         // echo http_build_query($tab,'',', ');
-                        echo $this->makeLink($key, $tab);
+                        echo $this->makeLink($key, $tab, array(
+                            'link-class' => 'tablink'
+                        ));
                         echo '</li>';
                     } ?>
                 </ul>
             </div>
         </div>
-        <div class="column auto is-flex is-justify-content-flex-end mt-2">
+        <div class="column is-narrow is-flex is-justify-content-flex-end mt-2">
             <?php
             foreach ($this->data['content_navigation'] as $group => $tabs) {
                 $menuId = sprintf('dropdown-menu-%s', $group);

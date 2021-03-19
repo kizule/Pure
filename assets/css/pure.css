@@ -109,3 +109,7 @@ body {
     padding: 15px;
     background-color: white;
 }
+
+a.tablink:hover, a.tablink:focus {
+    text-decoration: none;
+}
