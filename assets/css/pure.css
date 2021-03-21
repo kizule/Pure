@@ -128,7 +128,7 @@ a.tablink:focus {
 }
 
 
-#bodyContent a, .mw-normal-catlinks a {
+.column a, .mw-normal-catlinks a {
     color: #f9f696;
     font-weight: 500;
     font-family: monospace;
