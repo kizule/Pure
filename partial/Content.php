@@ -1,4 +1,7 @@
-<div class="container mw-body" id="content">
+<div class="container mw-body p-4 is-max-desktop" id="content">
+<video autoplay muted loop id="myVideo" class="is-hidden-mobile">
+  <source src="<?php echo htmlspecialchars( $this->getSkin()->getSkinStylePath( 'assets/images/hacker.mp4' ) ) ?>" type="video/mp4">
+</video>
     <div class="columns mt-2 mw-title">
         <div class="column is-full">
             <h1 class="title"><?php $this->html('title'); ?></h1>
