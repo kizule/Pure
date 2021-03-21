@@ -205,3 +205,8 @@ strong {
 .toolbar a {
     color: blue;
 }
+
+a.tablink {
+    color: #f68731;
+    font-weight: bold;
+}
