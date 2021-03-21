@@ -128,10 +128,9 @@ a.tablink:focus {
 }
 
 
-.column a, .mw-normal-catlinks a {
+.mw-editsection a, .mw-normal-catlinks a {
     color: #f9f696;
     font-weight: 500;
-    font-family: monospace;
 }
 
 .mw-body {
@@ -144,7 +143,7 @@ a.tablink:focus {
 }
 
 .tocnumber {
-    color: #4af979;
+    color: white;
 }
 
 .toctogglelabel {
@@ -206,11 +205,15 @@ strong {
     color: blue;
 }
 
-a.tablink {
+a.tablink, a, a:visited {
     color: #f68731;
     font-weight: bold;
 }
 
 .footer .column a {
     color: #061f38;
+}
+
+.mw-parser-output a.extiw, .mw-parser-output a.external {
+    color: #00bcd4;
 }
