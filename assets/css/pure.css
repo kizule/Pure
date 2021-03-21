@@ -177,3 +177,8 @@ pre, .mw-code {
 h1, h2, h3, h4, h5, h6 {
     color: white;
 }
+
+.mw-search-profile-tabs {
+    border: none;
+    background-color: #061f38a1;
+}
