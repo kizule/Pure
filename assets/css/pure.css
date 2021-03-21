@@ -210,3 +210,7 @@ a.tablink {
     color: #f68731;
     font-weight: bold;
 }
+
+.footer .column a {
+    color: #061f38;
+}
