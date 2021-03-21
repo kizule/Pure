@@ -182,3 +182,26 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     background-color: #061f38a1;
 }
+
+strong {
+    color: white;
+}
+
+.wikiEditor-ui-toolbar {
+    background-color: #061f38a1;
+}
+
+.messagebox, .errorbox, .warningbox, .successbox {
+    color: #eff34f;
+    background-color: #061f38a1;
+    font-weight: 500;
+}
+
+.editOptions {
+    color: white;
+    background-color: #061f38a1;
+}
+
+.toolbar a {
+    color: blue;
+}
