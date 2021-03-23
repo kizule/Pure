@@ -218,3 +218,7 @@ a.tablink, a, a:visited {
 .mw-parser-output a.extiw, .mw-parser-output a.external {
     color: #00bcd4;
 }
+
+.search-types .current a {
+    color: white;
+}
