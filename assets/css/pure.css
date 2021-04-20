@@ -223,6 +223,6 @@ a.tablink, a, a:visited {
     color: white;
 }
 
-.mw-highlight > pre .hll {
+.mw-highlight > pre span.hll {
     background-color: #ff980061;
 }
