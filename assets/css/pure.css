@@ -222,3 +222,7 @@ a.tablink, a, a:visited {
 .search-types .current a {
     color: white;
 }
+
+.mw-highlight > pre .hll {
+    background-color: #ff980061;
+}
