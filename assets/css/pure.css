@@ -226,3 +226,7 @@ a.tablink, a, a:visited {
 .mw-highlight > pre span.hll {
     background-color: #ff980061;
 }
+
+.mw-content-ltr > dl dt {
+    color: #ffeb3b;
+}
