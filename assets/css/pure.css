@@ -227,6 +227,6 @@ a.tablink, a, a:visited {
     background-color: #ff980061;
 }
 
-.mw-content-ltr > dl dt {
+dt {
     color: #ffeb3b;
 }
