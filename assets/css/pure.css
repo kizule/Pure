@@ -167,6 +167,8 @@ pre, .mw-code {
 code.mw-highlight {
     background-color: #061f38a1;
     font-family: "Andale Mono", monospace;
+    padding: 0;
+    border: none;
 }
 
 .catlinks {
