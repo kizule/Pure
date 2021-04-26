@@ -164,7 +164,7 @@ pre, .mw-code {
     font-family: "Andale Mono", monospace;
 }
 
-code {
+code.mw-highlight {
     background-color: #061f38a1;
     font-family: "Andale Mono", monospace;
 }
