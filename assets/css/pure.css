@@ -234,3 +234,10 @@ dt {
 .mw-datatable td {
     background: none;
 }
+
+#bodyContent ul li:before {
+    content: '\1405';
+    color: lightgreen;
+    margin: 0 1em;
+}
+    
