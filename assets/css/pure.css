@@ -259,3 +259,8 @@ span.article-label {
     border-bottom: 1px dashed #e91e6352;
     font-family: "Andale Mono", monospace;
 }
+
+q {
+    color: #a7a7a7;
+    font-style: italic;
+}
