@@ -251,3 +251,10 @@ dt {
 .toolbar.section {
     padding: 5px;
 }
+
+span.article-label {
+    color: #cddc39;
+    margin: 0 5px 0 5px;
+    border-bottom: 1px dashed #e91e63;
+    font-family: "Andale Mono", monospace;
+}
