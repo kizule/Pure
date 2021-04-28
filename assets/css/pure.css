@@ -248,3 +248,6 @@ dt {
     margin: 0 1em;
 }
     
+.toolbar.section {
+    padding: 5px;
+}
