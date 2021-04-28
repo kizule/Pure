@@ -165,10 +165,11 @@ pre, .mw-code {
 }
 
 code.mw-highlight {
-    background-color: #061f38a1;
-    font-family: "Andale Mono", monospace;
+    background-color: #061f38a6;
+    font-family: "Andale Mono",monospace;
     padding: 1px 5px 1px 5px;
     border: none;
+    border-bottom: 1px solid #e91e6370;
 }
 
 .catlinks {
@@ -255,6 +256,6 @@ dt {
 span.article-label {
     color: #cddc39;
     margin: 0 5px 0 5px;
-    border-bottom: 1px dashed #e91e63;
+    border-bottom: 1px dashed #e91e6352;
     font-family: "Andale Mono", monospace;
 }
