@@ -248,7 +248,7 @@ dt {
 }
 
 #bodyContent ul li:before {
-    content: '\1405';
+    content: '❒';
     color: lightgreen;
     margin: 0 1em;
 }
