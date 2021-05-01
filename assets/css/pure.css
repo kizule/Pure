@@ -249,7 +249,7 @@ dt {
 
 #bodyContent ul li:before {
     content: '❒';
-    color: lightgreen;
+    color: #ffeb3b;
     margin: 0 1em;
 }
     
