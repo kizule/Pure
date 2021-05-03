@@ -271,3 +271,7 @@ q {
     display: block;
     font-weight: bold;
 }
+
+table th {
+    color: #00bcd4;
+}
