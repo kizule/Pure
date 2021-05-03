@@ -276,6 +276,10 @@ table th {
     color: #00bcd4;
 }
 
-td.two-columns, th.two-columns {
+table.two-columns {
+    text-align: center;
+}
+table.two-columns td, table.two-columns th {
     width: 50%;
+    padding-left: 10px;
 }
