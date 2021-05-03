@@ -276,6 +276,6 @@ table th {
     color: #00bcd4;
 }
 
-td.two-columns {
+td.two-columns, th.two-columns {
     width: 50%;
 }
