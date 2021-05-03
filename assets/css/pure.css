@@ -278,6 +278,7 @@ table th {
 
 table.two-columns {
     text-align: center;
+    width: 100%;
 }
 table.two-columns td, table.two-columns th {
     width: 50%;
