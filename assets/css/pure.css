@@ -275,3 +275,7 @@ q {
 table th {
     color: #00bcd4;
 }
+
+td.two-columns {
+    width: 50%;
+}
