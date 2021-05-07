@@ -289,4 +289,5 @@ table.two-columns td, table.two-columns th {
 
 .MathJax{
     color: #00bcd4;
+    margin: 0 4px 0 4px;
 }
