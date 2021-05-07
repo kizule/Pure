@@ -286,3 +286,7 @@ table.two-columns td, table.two-columns th {
     padding-left: 10px;
     text-align: left;
 }
+
+span.MathJax {
+    color: color: #00bcd4;
+}
