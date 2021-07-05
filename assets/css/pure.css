@@ -257,6 +257,10 @@ li.gallerybox:before {
     content: none !important;
 }
 
+.panel li {
+    white-space: nowrap;
+}
+
 li.gallerybox div.thumb {
     border: 1px solid #c8ccd11f;
     background-color: #f8f9fa26;
