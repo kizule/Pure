@@ -253,6 +253,10 @@ dt {
     margin: 0 1em;
 }
     
+li.gallerybox:before {
+    content: none;
+}
+
 .toolbar.section {
     padding: 5px;
 }
