@@ -254,7 +254,12 @@ dt {
 }
     
 li.gallerybox:before {
-    content: none;
+    content: none !important;
+}
+
+li.gallerybox div.thumb {
+    border: 1px solid #c8ccd11f;
+    background-color: #f8f9fa26;
 }
 
 .toolbar.section {
