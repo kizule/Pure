@@ -299,3 +299,7 @@ table.two-columns td, table.two-columns th {
 .MathJax{
     color: #00bcd4;
 }
+
+ul.gallery {
+    text-align: center;
+}
