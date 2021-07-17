@@ -223,6 +223,10 @@ a.tablink, a, a:visited {
     font-weight: bold;
 }
 
+a.external, a.external:visited {
+    color: #8bc34a;
+}
+
 .footer .column a {
     color: #061f38;
 }
