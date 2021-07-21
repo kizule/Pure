@@ -307,3 +307,9 @@ table.two-columns td, table.two-columns th {
 ul.gallery {
     text-align: center;
 }
+
+
+/* override bulma theme */
+.card {
+    background-color: transparent;
+}
