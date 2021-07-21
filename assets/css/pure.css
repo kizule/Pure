@@ -312,4 +312,9 @@ ul.gallery {
 /* override bulma theme */
 .card {
     background-color: #ffffff14;
+    color: white;
+}
+
+.card-header-title {
+    color: white;
 }
