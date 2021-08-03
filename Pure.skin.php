@@ -11,12 +11,9 @@ class SkinPure extends SkinTemplate {
 		$out->addModules( 'skins.pure.js' );
 
 		$out->addHtmlClasses('no-js');
-	}
-
-	function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
 		$out->addModuleStyles( array(
-			'mediawiki.skinning.interface', 'skins.pure.styles'
+			'mediawiki.skinning.interface',
+			'skins.pure.styles'
 		) );
 	}
 }

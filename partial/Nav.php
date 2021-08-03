@@ -53,7 +53,7 @@
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link"><i class="fa fa-cogs"></i></a>
                     <div class="navbar-dropdown is-right">
-                        <?php foreach ($this->getToolbox() as $key => $item) {
+                        <?php foreach ($this->data['sidebar']['TOOLBOX'] as $key => $item) {
                             echo $this->makeLink($key, $item, array('link-class' => 'navbar-item'));
                         } ?>
                     </div>
