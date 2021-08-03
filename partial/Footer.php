@@ -10,7 +10,7 @@
         <?php } ?>
 
         <div class="columns is-justify-content-center">
-            <?php foreach ($this->getFooterIcons('icononly') as $blockName => $footerIcons) { ?>
+            <?php foreach ($this->getPureFooterIcons() as $blockName => $footerIcons) { ?>
                 <div class="column is-1">
                     <?php
                     foreach ($footerIcons as $icon) {

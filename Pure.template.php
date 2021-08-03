@@ -2,6 +2,18 @@
 
 class PureTemplate extends BaseTemplate
 {
+	private function getPureFooterIcons() {
+		$footericons = $this->get('footericons');
+		foreach ( $footericons as $footerIconsKey => &$footerIconsBlock ) {
+			foreach ( $footerIconsBlock as $footerIconKey => $footerIcon ) {
+				if ( !isset( $footerIcon['src'] ) ) {
+					unset( $footerIconsBlock[$footerIconKey] );
+				}
+			}
+		}
+		return $footericons;
+	}
+
 	public function execute()
 	{
 		global $wgUser;
