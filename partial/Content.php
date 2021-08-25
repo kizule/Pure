@@ -1,5 +1,5 @@
 <div class="container mw-body p-4 is-max-desktop" id="content">
-<video autoplay muted loop id="myVideo" class="is-hidden-mobile">
+<video autoplay muted loop id="myVideo">
   <source src="<?php echo htmlspecialchars( $this->getSkin()->getSkinStylePath( 'assets/images/hacker.mp4' ) ) ?>" type="video/mp4">
 </video>
     <div class="columns mt-2 mw-title">
